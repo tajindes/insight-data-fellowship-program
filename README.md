@@ -8,7 +8,7 @@ Github	: https://bitbucket.org/tajindes/insight-data-fellowship-program
 Execution:
 Terminal$ ./run.sh
 
-Let me know if I need to include anything else. Thanks.
+Feel free to contact me if any other information is required. Thanks.
 
 Regards,
 Tajinder Singh
