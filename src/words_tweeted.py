@@ -15,18 +15,22 @@ tweetText = twiterInput.readline();
 wordsTweetedDict = dict();
 
 while(tweetText):
-	# To strip the tweet of the preceeding and following spaces if any.
-	tweetText = tweetText.strip();
-	# Convert text into list of words
-	tweetList = tweetText.split();
-	# Iterate through all the words in the List
-	for word in tweetList:
-		# Check if the word exists in the dictionary
-		if(word not in wordsTweetedDict):
-			wordsTweetedDict[word] = 1;
-		else:
-			# increment the counter if the word already exists
-			wordsTweetedDict[word] = wordsTweetedDict[word] + 1;
+	# Exception Hanlding
+	try:	
+		# To strip the tweet of the preceeding and following spaces if any.
+		tweetText = tweetText.strip();
+		# Convert text into list of words
+		tweetList = tweetText.split();
+		# Iterate through all the words in the List
+		for word in tweetList:
+			# Check if the word exists in the dictionary
+			if(word not in wordsTweetedDict):
+				wordsTweetedDict[word] = 1;
+			else:
+				# increment the counter if the word already exists
+				wordsTweetedDict[word] = wordsTweetedDict[word] + 1;
+	except:
+		pass;
 	tweetText = twiterInput.readline();
 # close the input tweets file
 twiterInput.close();
