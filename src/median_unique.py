@@ -95,7 +95,6 @@ while(tweetText):
 	uniqueWordSet.clear();
 
 	tweetText = twiterInput.readline();
-
 # close the input tweets file
 twiterInput.close();
 # Close the output file.

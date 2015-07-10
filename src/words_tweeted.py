@@ -41,6 +41,5 @@ featureOutput = open(outputArgument, "w",);
 for asciiSortWord in sorted(wordsTweetedDict):
 	# Write the content in the output file with vertical alignment.
 	featureOutput.write('{:<40}  {:<40}'.format(asciiSortWord,wordsTweetedDict[asciiSortWord]) + '\n');
-
 # Close the output file.
 featureOutput.close();
